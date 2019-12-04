@@ -20,9 +20,10 @@ function run() {
       switch (e.which) {
         case getKeyCode('R'): {
           const elem = document.getElementById('workflow-editor-1');
-          const jElm = jQuery('#workflow-editor-1');
-          console.log(jElm);
           elem.style.height = '1500px';
+          jQuery('#workflow-editor-1').load(
+            `${window.location.href}#workflow-editor-1`
+          );
           break;
         }
         default:
