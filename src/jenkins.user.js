@@ -1,8 +1,9 @@
+/* eslint-disable no-undef */
 // ==UserScript==
 // @name            Jenkins Helpers
 // @author          Nick Fields
 // @description     Helpers to make you hate Jenkins a little less
-// @version         0.3
+// @version         0.4
 // @updateURL       https://github.com/nick-invision/tampermonkey/raw/master/src/jenkins.user.js
 // @downloadURL     https://github.com/nick-invision/tampermonkey/raw/master/src/jenkins.user.js
 // @include         https://jenkins.*
@@ -14,12 +15,13 @@ function run() {
     return letter.charCodeAt(0);
   }
 
-  // eslint-disable-next-line no-undef
   jQuery(window).keydown((e) => {
     if (e.shiftKey && e.ctrlKey) {
       switch (e.which) {
         case getKeyCode('R'): {
           const elem = document.getElementById('workflow-editor-1');
+          const jElm = jQuery('#workflow-editor-1');
+          console.log(jElm);
           elem.style.height = '1500px';
           break;
         }
