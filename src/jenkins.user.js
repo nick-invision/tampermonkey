@@ -3,7 +3,7 @@
 // @name            Jenkins Helpers
 // @author          Nick Fields
 // @description     Helpers to make you hate Jenkins a little less
-// @version         0.6
+// @version         0.7
 // @updateURL       https://github.com/nick-invision/tampermonkey/raw/master/src/jenkins.user.js
 // @downloadURL     https://github.com/nick-invision/tampermonkey/raw/master/src/jenkins.user.js
 // @include         https://jenkins.*
