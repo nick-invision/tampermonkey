@@ -3,7 +3,7 @@
 // @name            Jenkins Helpers
 // @author          Nick Fields
 // @description     Helpers to make you hate Jenkins a little less
-// @version         0.5
+// @version         0.6
 // @updateURL       https://github.com/nick-invision/tampermonkey/raw/master/src/jenkins.user.js
 // @downloadURL     https://github.com/nick-invision/tampermonkey/raw/master/src/jenkins.user.js
 // @include         https://jenkins.*
@@ -21,9 +21,6 @@ function run() {
         case getKeyCode('R'): {
           const elem = document.getElementById('workflow-editor-1');
           elem.style.height = '1500px';
-          jQuery('#workflow-editor-1').load(
-            `${window.location.href}#workflow-editor-1`
-          );
           break;
         }
         default:
