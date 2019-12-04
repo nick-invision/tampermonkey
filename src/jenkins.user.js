@@ -2,12 +2,12 @@
 // @name            Jenkins Helpers
 // @author          Nick Fields
 // @description     Helpers to make you hate Jenkins a little less
-// @version         0.2
+// @version         0.3
 // @updateURL       https://github.com/nick-invision/tampermonkey/raw/master/src/jenkins.user.js
 // @downloadURL     https://github.com/nick-invision/tampermonkey/raw/master/src/jenkins.user.js
 // @include         https://jenkins.*
 // @include         https://builds.*
-// @require         http://code.jquery.com/jquery-latest.js
+// @require         https://code.jquery.com/jquery-2.1.4.min.js
 // ==/UserScript==
 function run() {
   function getKeyCode(letter) {
